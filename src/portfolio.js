@@ -3,7 +3,7 @@
 // To change portfolio colors globally go to the  _globalColor.scss file
 
 import emoji from "react-easy-emoji";
-import splashAnimation from "./assets/lottie/splashAnimation"; // Rename to your file name for custom animation
+import splashAnimation from './assets/lottie/splashAnimation.json'; // Rename to your file name for custom animation
 
 // Splash Screen
 
@@ -26,7 +26,7 @@ const greeting = {
     "A BSc Information Technology graduate specializing in Computer Science and Informatics 🚀.  Led the development of a 3-tier system for a real-world client, including a website, database, and mobile app. Skilled in mobile app development and API design, with a passion for solving business challenges through technology."
   ),
   resumeLink:
-    "https://drive.google.com/file/d/1SQASty7I82Mev4AxUu8_1OEtvMZgjnvW/view", // Set to empty to hide the button
+    "https://drive.google.com/file/d/1Mn3ooFYG-JTv8mLEngmKkOVtSdndTQ8s/view?usp=drive_link", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
@@ -218,6 +218,22 @@ const bigProjects = {
         }
         //  you can add extra buttons here.
       ]
+    },
+    {
+      image: require("./assets/images/ubuntuCareLogo.webp"),
+      projectName: "UbuntuCare AI Health System",
+      projectDesc: "Built an AI-based mobile-app health system for under developed communities. Monitored health components like heart rate, oxygen saturation, blood sugar levels, and temperature. Kept track of patient data and provided health recommendations. Also included live AI voice translation for non-English speakers.",
+      footerLink: [
+        {
+          name: "Download App",
+          url: ""
+        },
+        {
+          name: "GitHub",
+          url: "https://github.com/ctrl-alt-explore"
+        }
+        //  you can add extra buttons here.
+      ]
     }
   ],
   display: true // Set false to hide this section, defaults to true
@@ -231,28 +247,28 @@ const achievementSection = {
   subtitle:
     "Achievements, Certifications, Award Letters and Some Cool Stuff that I have done !",
 
-  //achievementsCards: [
-    //{
-    //  title: "Google Code-In Finalist",
-    //  subtitle:
-    //    "First Pakistani to be selected as Google Code-in Finalist from 4000 students from 77 different countries.",
-    //  image: require("./assets/images/codeInLogo.webp"),
-    //  imageAlt: "Google Code-In Logo",
-    //  footerLink: [
-    //    {
-    //      name: "Certification",
-    //      url: "https://drive.google.com/file/d/0B7kazrtMwm5dYkVvNjdNWjNybWJrbndFSHpNY2NFV1p4YmU0/view?usp=sharing"
-    //    },
-    //    {
-    //      name: "Award Letter",
-    //      url: "https://drive.google.com/file/d/0B7kazrtMwm5dekxBTW5hQkg2WXUyR3QzQmR0VERiLXlGRVdF/view?usp=sharing"
-    //    },
-    //    {
-    //      name: "Google Code-in Blog",
-    //      url: "https://opensource.googleblog.com/2019/01/google-code-in-2018-winners.html"
-    //    }
-    //  ]
-    //},
+  achievementsCards: [
+    {
+      title: "Monkey and River Hackathon 2025 Winner",
+      subtitle:
+        "Came first in the hackathon after being selected as one of the top 50 finalists from 700 participants from different institutes in South Africa.",
+      image: require("./assets/images/monkeyAndRiverLogo.webp"),
+      imageAlt: "Monkey and River Logo",
+      footerLink: [
+        //{
+        //  name: "Certification",
+        //  url: "https://drive.google.com/file/d/0B7kazrtMwm5dYkVvNjdNWjNybWJrbndFSHpNY2NFV1p4YmU0/view?usp=sharing"
+        //},
+        {
+          name: "Award Letter",
+          url: "https://drive.google.com/file/d/16HgWkbS-QMaHtOWQRyPIXlZlUqgmHSVs/view?usp=drive_link"
+        },
+        {
+          name: "Monkey and River Hackathon Blog",
+          url: "https://monkeyandriver.com/event/hackathon-2025-recap/"
+        }
+      ]
+    }
     //{
     //  title: "Google Assistant Action",
     //  subtitle:
@@ -278,9 +294,9 @@ const achievementSection = {
     //      url: "https://pakistan-olx-1.firebaseapp.com/"
     //    }
     //  ]
-//    }
-//  ],
-//  display: true // Set false to hide this section, defaults to true
+   //}
+ ],
+  display: true // Set false to hide this section, defaults to true
 };
 
 // Blogs Section
@@ -343,7 +359,7 @@ const podcastSection = {
 const resumeSection = {
   title: "Nqobile Nkiwane's Resume",
   subtitle: "Feel free to download my resume",
-  resumeUrl: "https://drive.google.com/file/d/1SQASty7I82Mev4AxUu8_1OEtvMZgjnvW/view", // Set to empty to hide the button
+  resumeUrl: "https://drive.google.com/file/d/1Mn3ooFYG-JTv8mLEngmKkOVtSdndTQ8s/view?usp=drive_link", // Set to empty to hide the button
 
   // Please Provide with Your Podcast embeded Link
   display: true // Set false to hide this section, defaults to true
@@ -364,7 +380,7 @@ const twitterDetails = {
   display: true // Set true to display this section, defaults to false
 };
 
-const isHireable = false; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
+const isHireable = true; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
 
 export {
   illustration,
